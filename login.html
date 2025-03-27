@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @font-face {
+            font-family: 'font1';
+            src: url('./assets/fonts/1.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'font2';
+            src: url('./assets/fonts/2.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'font3';
+            src: url('./assets/fonts/3.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Example usage */
+        .montserrat {
+            font-family: 'font1', sans-serif;
+        }
+
+        .condensed {
+            font-family: 'font2', sans-serif;
+        }
+
+        .abel {
+            font-family: 'font3', sans-serif;
+            background: #d8d8d8;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white flex justify-center">
+    <main class="max-w-xl px-5 flex flex-col items-center">
+
+
+        <p class="montserrat uppercase pt-2 text-sm">
+            Join the World of
+        </p>
+        <img class="w-52 pt-2" src="./assets/images/cod-logo-hitmarker.png" alt="">
+        <p class="montserrat uppercase pt-2 text-xl text-center pt-20">
+            Sign in to your<br />
+            Activision account
+        </p>
+        <div class="max-w-[320px] w-full pt-5 flex flex-col gap-1">
+
+            <label class="condensed text-sm">Email Address:*</label>
+            <input class="condensed w-full h-10 bg-[#d8d8d8] text-black px-3  py-4 rounded-sm text-sm " type="text">
+            <label class="condensed text-sm mt-2">Password:*</label>
+            <input class="condensed w-full h-10 bg-[#d8d8d8] text-black px-3  py-4 rounded-sm text-sm " type="text">
+
+            <button id="login-button" class="mt-3 border border-blue-500 h-10">
+                Sign In</button>
+        </div>
+
+        <p class="mt-20 text-center condensed text-xs text-[#adabab]">
+            © 2019-2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL OF DUTY LEAGUE, CALL OF DUTY MODERN
+            WARFARE,
+            MODERN WARFARE, CALL OF DUTY BLACK OPS, CALL OF DUTY WARZONE, WARZONE and CALL OF DUTY VANGUARD are
+            trademarks
+            of
+            Activision Publishing, Inc. All other trademarks and trade names are the property of their respective
+            owners.
+        </p>
+    </main>
+</body>
+
+</html>
