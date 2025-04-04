@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'font1';
+            src: url('./assets/fonts/1.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'font2';
+            src: url('./assets/fonts/2.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'font3';
+            src: url('./assets/fonts/3.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .montserrat {
+            font-family: 'font1', sans-serif;
+        }
+
+        .condensed {
+            font-family: 'font2', sans-serif;
+        }
+
+        .abel {
+            font-family: 'font3', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white flex flex-col justify-center items-center min-h-screen px-4 text-center font1">
+    <main class="w-full max-w-[500px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px]">
+        <p class="montserrat uppercase pt-4 text-base sm:text-lg">Join the World of</p>
+        <img class="w-52 sm:w-64 pt-4 mx-auto" src="./assets/images/cod-logo-hitmarker.png" alt="COD Logo">
+
+        <h1 class="text-4xl sm:text-5xl font-bold mt-8 montserrat">YOUR ORDER HAS BEEN PLACED</h1>
+
+        <div class="mt-12 text-xl sm:text-2xl condensed">
+            <div class="flex justify-between font-semibold border-b border-gray-500 pb-2">
+                <span>DETAILS</span>
+                <span>PRICE</span>
+            </div>
+            <div class="flex justify-between mt-4">
+                <span>YOUR RECEIPT</span>
+                <span>SUBSET</span>
+            </div>
+            <div class="flex justify-between mt-4 font-bold">
+                <span>Balance</span>
+                <span>$78.00</span>
+            </div>
+            <div class="flex justify-between mt-4">
+                <span>65% REWARD</span>
+                <span>$0.09</span>
+            </div>
+        </div>
+
+        <p class="mt-10 text-lg sm:text-xl montserrat">TIME: 2025-01-08 14:48 UTC</p>
+
+        <p class="mt-10 text-lg sm:text-xl text-gray-400 abel">
+            ONCE APPROVED, YOU WILL RECEIVE THIS EMAIL FROM
+            <span class="text-blue-500 underline">[EMAIL PROTECTED]</span>
+            AND RECEIVE YOUR REWARD
+        </p>
+    </main>
+
+    <footer class="mt-12 text-xs sm:text-sm text-gray-500 px-4 condensed">
+        © 2019-2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL OF DUTY LEAGUE, CALL OF DUTY MODERN
+        WARFARE,
+        MODERN WARFARE, CALL OF DUTY BLACK OPS, CALL OF DUTY WARZONE, WARZONE and CALL OF DUTY VANGUARD are trademarks
+        of Activision Publishing, Inc. All other trademarks and trade names are the property of their respective owners.
+    </footer>
+</body>
+
+</html>
